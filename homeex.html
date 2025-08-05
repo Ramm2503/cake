@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0%;
+        }
+        .nav li:hover{
+            color: rgb(28, 120, 232);
+        }
+        .nav a:hover{
+            color:  rgb(22, 114, 226);
+        }
+        .nav a{
+            text-decoration: none;
+            color: black;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+       #ul li {
+            display: inline-block;
+            position: relative;
+            left: 350px;
+            margin-top: 20px;
+            padding: 20px;
+            color: black;
+        }
+
+        label {
+            position: relative;
+            left: 100px;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        ul.navbar li a {
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-column{
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <label><img src="./title.png"></label>
+        <nav>
+            <ul type="none" id="ul">
+                <b><li><a href="./home.html">Home</a></li>
+                <li><a href="./our product.html" target="_blank">Our products</a></li>
+                <li><a href="./about.html"target="_blank"> About us</a> </li>
+                <li>Our History</li>
+                <!-- <li id="drop"><a href="./manuf.html"target="_blank">Become a Franchise</a></li> -->
+                <li class="dropdown"><a href="#">Become a Franchise</a>
+                    <div class="dropdown-content">
+                      <div class="dropdown-column">
+                        <ul>
+                           <li> <a href="./manuf.html">Manufacturing Franchise</li></a> 
+                           <li> <a href="./cakeshop.html">Cake Shop Franchise</li></a>
+                <li><a href="./blog.html"target="_blank">blogs</a></li></b>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $(".dropdown").mouseenter(function () {
+          $(this).find(".dropdown-content").fadeIn(200);
+        });
+
+        $(".dropdown").mouseleave(function () {
+          $(this).find(".dropdown-content").fadeOut(200);
+        });
+      });
+</script>
+</html>

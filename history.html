@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0%;
+
+        }
+
+        .nav li:hover {
+            color: rgb(10, 110, 233);
+        }
+
+        .nav a:hover {
+            color: rgb(10, 110, 233);
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+        .navbar-nav{
+                padding: 30px;
+                padding-left: 200px;
+                gap: 20px;
+            }
+            .container-fluid img{
+                margin-left: 250px;
+                width: 200px;
+            }
+            .navbar-nav :hover{
+                color:rgb(22, 114, 226) ;
+            }
+
+
+
+      
+
+        .about {
+            background-color: rgb(5, 5, 93);
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+            font-size: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .div {
+
+            width: 3px;
+            height: 5250px;
+            background-color: gray;
+            margin-top: 85px;
+            margin-left: 750px;
+
+        }
+        i{
+            position: relative;
+            top: 90px;
+            right: 10px;
+
+        }
+        #i1{
+            position: relative;
+            left: 540px;
+        }
+        #i2{
+            position: relative;
+            right: 160px;
+        }
+        #i3{
+            position: relative;
+            left: 540px;
+        }
+        #i4{
+            position: relative;
+            right: 160px;
+        }
+        #i5{
+            position: relative;
+            left: 540px;
+        }
+        #i6{
+            position: relative;
+            right: 165px;
+        }
+        #i7{
+            position: relative;
+            left: 540px;
+        }
+        #i8{
+            position: relative;
+            right: 165px;
+        }
+        
+        #i9{
+            position: relative;
+            left: 540px;
+        }
+        #i10{
+            position: relative;
+            right: 160px;
+        }
+        #i11{
+            position: relative;
+            left: 540px;
+        }
+        #i12{
+            position: relative;
+            right: 160px;
+        }
+        #i13{
+            position: relative;
+            left: 540px;
+        }
+        #i14{
+            position: relative;
+            right: 160px;
+        }
+        #i15{
+            position: relative;
+            left: 540px;
+        }
+        #i16{
+            position: relative;
+            right: 160px;
+        }
+        #i17{
+            position: relative;
+            left: 540px;
+        }
+        #i18{
+            position: relative;
+            right: 160px;
+        }
+        #i19{
+            position: relative;
+            left: 540px;
+        }
+        #i20{
+            position: relative;
+            right: 160px;
+        }
+        #i21{
+            position: relative;
+            left: 540px;
+        }
+        #i22{
+            position: relative;
+            right: 160px;
+        }
+        #i23{
+            position: relative;
+            left: 540px;
+        }
+        #i24{
+            position: relative;
+            right: 160px;
+        }
+        #i25{
+            position: relative;
+            right: 20px;
+            
+        }
+        #i26{
+            position: relative;
+            left: 730px;
+            
+        }
+        #p1 {
+            position: relative;
+            right: 100px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p2{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p3{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p4{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p5{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p6{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p7{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p8{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p9{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p10{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p11{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p12{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p13{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p14{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p15{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p16{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p17{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p18{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p19{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p20{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p21{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p22{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p23{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p24{
+            position: relative;
+            left: 600px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        #p25{
+            position: relative;
+            right: 250px;
+            top: 50px;
+            font-size: 30px;
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+        }
+        .div1 {
+            position: relative;
+            left: 150px;
+            width: 500px;
+        }
+
+        .div2 {
+            position: relative;
+            right: 550px;
+            width: 500px;
+        }
+        .div3{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div4{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div5{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div6{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div7{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div8{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div9{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div10{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div11{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div12{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div13{
+            position: relative;
+            width: 500px;
+            left: 150px; 
+        }
+        .div14{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div15{
+            position: relative;
+            width: 500px;
+            left: 150px; 
+        }
+        .div16{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div17{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div18{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div19{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div20{
+
+         position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div21{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div22{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div23{
+            position: relative;
+            width: 500px;
+            left: 150px;
+        }
+        .div24{
+            position: relative;
+            width: 500px;
+            right: 550px;
+        }
+        .div25{
+            position: relative;
+            width: 500px;
+            left: 150px;
+            background-color: white;
+        }
+        @media only screen and (min-width:400px) and (max-width:600px){
+            body{
+                width: 1250px;
+            }
+            .fulldiv{
+                position: relative;
+                right: 160px;
+            }
+            .navbar-brand{
+                position: relative;
+                left: 250px;
+            }
+
+        }
+
+        
+        
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./title.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <b> <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" target="_blank">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./our product.html" target="_blank">Our Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./history.html" target="_blank">Our History</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Become a Franchise
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./manuf.html" target="_blank ">Manufacturing Franchise</a></li>
+                            <li><a class="dropdown-item" href="./cakeshop.html" target="_blank">Cake Shop Franchise</a></li>
+                            <li>
+                                <!-- <hr class="dropdown-divider"> -->
+                            </li>
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+                </ul></b>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="about">
+        <h1>Our History</h1>
+    </div>
+<div class="fulldiv">
+<div class="di">
+    <i class="fa-solid fa-circle" style="font-size: 30px;" id="i26"></i>
+</div>
+    <div class="div">
+        <i class="fa-solid fa-building" style="font-size: 30px;" ></i>
+        <p id="p1">2019</p>
+        <div class="div1">
+            <h4>Well Known Brand Of Indi</h4>
+            <p>A New Monginis factories at Kolkata was re-launched<br>
+                Awarded "Well Known Brand of India" recognition by Government of India.<br>
+                Monginis listed among the Top 100 Franchise brands by<br> India’s no.1 Franchising Magazine - The
+                Franchising World</p>
+        </div>
+        <div class="div2">
+            <i class="fa-solid fa-id-badge" style="font-size: 30px;"  id="i1"></i>
+            <p id="p2">2018</p>
+            <h4>Awarded Franchisor Of The Year</h4>
+           <p>Awarded Franchisor of the Year - Bakery Category 2018<br>
+            Awarded Economic Times Now - Food & Grocery Brand of <br>India in Bakery category</p>
+        </div>
+
+
+        <div class="div3">
+            <i class="fa-solid fa-square-share-nodes" style="font-size: 30px;" id="i2"></i>
+            <p id="p3">2017</p>
+            <h4>New Monginis Factories Established</h4>
+            <p>New Monginis factories at Patna, Delhi, Hyderabad were established<br>
+                Awarded Franchisor of the Year - Bakery & Café Category 2017<br>
+                Awarded The Economic Times Iconic Brand of India in Cakes category<br>
+                Awarded The Economic Times - India Licensing Award - Licensee of the Year 2017<br>
+                Awarded Times Network - Brand Leadership Award 2017</p>
+        </div>
+
+        <div class="div4">
+            <i class="fa-solid fa-industry" style="font-size: 30px;" id="i3"></i>
+            <p id="p4">2016</p>
+            <h4>Indian Power Brand In Cakes Category</h4>
+            <p>Monginis factory at Odisha relaunched and Monginis Raipur Factories was established<br>
+                Awarded Indian Power Brand in Cakes Category<br>
+                Awarded The Majestic Five Continents Brand for Quality & Excellence in Germany<br>
+                Awarded Food & Grocery Brand of India in Bakery category Year 2016</p>
+        </div>
+
+        <div class="div5">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i4"></i>
+            <p id="p5">2015</p>
+            <h4>A New Monginis Factory At Kolhapur</h4>
+            <p>A New Monginis Factory at Kolhapur was established.<br>
+                Awarded India's Most Trusted Brand in Bakery Category</p>
+        </div>
+
+        <div class="div6">
+            <i class="fa-solid fa-gift" style="font-size: 30px;" id="i5"></i>
+            <p id="p6">2014</p>
+            <h4>Launched An Exclusive E-motion Cake</h4>
+            <p>Monginis was the first Cake Brand to launch an exclusive<br> E-motion cake. A cake with real Lights, Movement & sounds!<br>
+                Monginis became a pioneer of an Educatainment Theme <br>Park by launching Mongiland - Kid’s Dream World, at Monginis Bhiwandi factory.<br>
+                Awarded India's No.1 Cake Brand in the Bakery category</p>
+        </div>
+
+        <div class="div7">
+            <i class="fa-solid fa-star" style="font-size: 30px;" id="i6"></i>
+            <p id="p7">2013</p>
+            <h4>Made A 2000kg Cake</h4>
+            <p>A 2000 kgs cake was made for an event at Thane West -<br> Vasant Balmahotsav of 120 ft x 10 ft dimension.</p>
+        </div>
+
+        <div class="div8">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i7"></i>
+            <p id="p8">2012</p>
+            <h4>New Factory Launched</h4>
+            <p>A New Monginis Factory at Aurangabad was established</p>
+        </div>
+
+        <div class="div9">
+            <i class="fa-solid fa-globe" style="font-size: 30px;" id="i8"></i>
+            <p id="p9">2011</p>
+            <h4>Launched E-commerce Website</h4>
+            <p>Monginis launched an E-commerce website for Online delivery in PAN INDIA.<br>
+                Monginis launched an exclusive Photo Cake with edible ink.</p>
+        </div>
+
+        <div class="div10">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i9"></i>
+            <p id="p10">2010</p>
+            <h4>New Factory At Palanpur</h4>
+            <p>A New Monginis Factory at Palanpur <br>(Tarmal Bakers) was established</p>
+        </div>
+
+        <div class="div11">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i10"></i>
+            <p id="p11">2008</p>
+            <h4>New Monginis Factory At Bhiwandi</h4>
+            <p>A new Monginis Factory at Bhiwandi was established</p>
+        </div>
+
+        <div class="div12">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i11"></i>
+            <p id="p12">2004</p>
+            <h4>New Monginis Factory At Surat</h4>
+            <p>A New Monginis Factory at Surat was established</p>
+        </div>
+
+        <div class="div13">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i12"></i>
+            <p id="p13">2003</p>
+            <h4>New Monginis Factory At Ahmedabad</h4>
+            <p>A New Monginis Factory at Ahmedabad was established</p>
+        </div>
+
+        <div class="div14">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i13"></i>
+            <p id="p14">2000</p>
+            <h4>Two New Monginis Factories</h4>
+            <p>Two New Monginis factories at Goa & Baroda were established</p>
+        </div>
+
+        <div class="div15">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i14"></i>
+            <p id="p15">1998</p>
+            <h4>A New Monginis Factory At Rajkot</h4>
+            <p>A New Monginis Factory at Rajkot was established<br>
+                Monginis Bhandup Factory (Delicia Foods) was started for catering Packaged Cakes category</p>
+        </div>
+
+        <div class="div16">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i15"></i>
+            <p id="p16">1995</p>
+            <h4>A New Monginis Factory At Pune</h4>
+            <p>A New Monginis Factory at Pune was established</p>
+            
+        </div>
+
+        <div class="div17">
+            <i class="fa-solid fa-earth-americas" style="font-size: 30px;" id="i16"></i>
+            <p id="p17">1993</p>
+            <h4>International Brand</h4>
+            <p>Monginis became an international brand, as it started a factory <br>in Egypt.</p>
+        </div>
+
+        <div class="div18">
+            <i class="fa-solid fa-certificate" style="font-size: 30px;" id="i17"></i>
+            <p id="p18">1988</p>
+            <h4>Made The longest Cake in Asia</h4>
+            <p>The longest Cake in Asia is 55 feet, 350 kilograms. It was made by <br>Monginis Bakery for Rotary Club Event in Mumbai.</p>
+        </div>
+
+        <div class="div19">
+            <i class="fa-regular fa-box" style="font-size: 30px;" id="i18"></i>
+            <p id="p19">1986</p>
+            <h4>Entered The Packaged Cakes Category</h4>
+            <p>Monginis entered the Packaged Cakes Category with the launch of its Vanilla Slice Cake product.</p>
+        </div>
+
+        <div class="div20">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i19"></i>
+            <p id="p20">1984</p>
+            <h4>A New Monginis Factory At Versova</h4>
+            <p>A New Monginis Factory at Versova Andheri west was established</p>
+        </div>
+
+        <div class="div21">
+            <i class="fa-regular fa-building" style="font-size: 30px;" id="i20"></i>
+            <p id="p21">1971</p>
+            <h4>Monginis Cake Shop Franchise Model</h4>
+            <p>Monginis Cake Shop Franchise Model was First introduced by visionary Late Mr.H.T.Khorakiwala</p>
+        </div>
+
+        <div class="div22">
+            <i class="fa-solid fa-heart" style="font-size: 30px;" id="i21"></i>
+            <p id="p22">1956</p>
+            <h4>A hundred Years Old Heritage Brand</h4>
+            <p>A hundred years old Heritage Brand was taken over by the Khorakiwala <br>family from the two Italian Mongini Brothers.</p>
+        </div>
+
+        <div class="div23">
+            <i class="fa-solid fa-flag" style="font-size: 30px;" id="i22"></i>
+            <p id="p23">1946</p>
+            <h4>After World War II</h4>
+            <p>After World War II, the Mongini brothers left the country, selling <br>their restaurant to a local family, the Khuranas</p>
+        </div>
+
+        <div class="div24">
+            <i class="fa-solid fa-cake-candles" style="font-size: 30px;" id="i23"></i>
+            <p id="p24">1919</p>
+            <h4>Reopened Two More New & Larger<br> Building</h4>
+            <p>Following a widening of Churchgate Street, they reopened two more<br> New and larger building</p>
+        </div>
+
+        <div class="div25">
+            <i class="fa-solid fa-industry" style="font-size: 30px;" id="i24"></i>
+            <p id="p25">1902</p>
+            <h4>Two Italian Brothers, Started A Restaurant</h4>
+            <p>Two Italian Brothers, started a Restaurant at Churchgate Street <br>of Bombay named Mongini Ltd.</p>
+        </div>
+
+        <div class="div26">
+            <i class="fa-solid fa-circle" style="font-size: 30px;" id="i25"></i>
+        </div>
+    </div>
+</div>
+
+
+
+    
+</body>
+
+</html>

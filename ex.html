@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      ul.navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        background-color: #333;
+      }
+
+      ul.navbar > li {
+        margin: 10px;
+      }
+
+      ul.navbar li a {
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: violet;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        width: 800px;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 1;
+        display: flex;
+      }
+
+      .dropdown-column {
+        flex: 1;
+        padding: 0 15px;
+      }
+
+      .dropdown-column h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .dropdown-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .dropdown-column li {
+        margin: 5px 0;
+      }
+
+      .dropdown-column a {
+        text-decoration: none;
+      }
+
+      .dropdown-column a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Men</a></li>
+        <li class="dropdown">
+          <a href="#">Women</a>
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <h4>Sarees</h4>
+              <ul>
+                <li><a href="#">All Sarees</a></li>
+                <li><a href="#">Silk Sarees</a></li>
+                <li><a href="#">Cotton Silk Sarees</a></li>
+                <li><a href="#">Cotton Sarees</a></li>
+                <li><a href="#">Geogette Sarees</a></li>
+                <li><a href="#">Satin Sarees</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Kurtis</h4>
+              <ul>
+                <li><a href="#">All Kurits</a></li>
+                <li><a href="#">Anarkali Kurtis</a></li>
+                <li><a href="#">Rayon Kurtis</a></li>
+                <li><a href="#">Cotton Kurtis</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Suits & Dress Material</h4>
+              <ul>
+                <li><a href="#">All Suits & Dress Material</a></li>
+                <li><a href="#">Cotton Suits</a></li>
+                <li><a href="#">Embroidered Suits</a></li>
+                <li><a href="#">Chanderi Suits</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Kids</a></li>
+      </ul>
+    </nav>
+    <script>
+      $(document).ready(function () {
+        $(".dropdown").mouseenter(function () {
+          $(this).find(".dropdown-content").fadeIn(200);
+        });
+
+        $(".dropdown").mouseleave(function () {
+          $(this).find(".dropdown-content").fadeOut(200);
+        });
+      });
+    </script>
+  </body>
+</html>
+</body>
+</html>

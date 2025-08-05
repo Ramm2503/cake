@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0%;
+
+        }
+        .nav li:hover{
+            color:rgb(10, 110, 233);
+        }
+        .nav a:hover{
+            color:  rgb(10, 110, 233);
+        }
+        .nav a{
+            text-decoration: none;
+            color: black;
+        }
+        .navbar-nav{
+                padding: 30px;
+                padding-left: 200px;
+                gap: 20px;
+            }
+            .container-fluid img{
+                margin-left: 250px;
+                width: 200px;
+            }
+            .navbar-nav :hover{
+                color:rgb(22, 114, 226) ;
+            }
+
+        
+
+        
+
+        .about {
+            background-color: rgb(5, 5, 93);
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+            font-size: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .h1 {
+            text-align: center;
+            color: rgb(255, 1, 149);
+            padding: 30px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .h2 {
+            text-align: center;
+            color: rgb(255, 1, 149);
+            padding: 60px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .p1 {
+            text-align: center;
+
+        }
+
+
+        .our {
+            /* padding: 50px; */
+            display: flex;
+            justify-content: space-between;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+        .cakeimg {
+            position: relative;
+            bottom: 30px;
+        }
+
+        .h3 {
+            /* margin-left: 220px; */
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .p1 {
+            /* text-align: center; */
+            padding: 30px;
+        }
+
+        .img {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .img1 {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .img2 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .secret {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .h4 {
+            text-align: center;
+            color: rgb(255, 1, 149);
+            padding: 50px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .stores {
+            text-align: center;
+        }
+
+        .h5 {
+            text-align: center;
+            color: rgb(79, 74, 74);
+            position: relative;
+            bottom: 30px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .food {
+            /* margin-left: 100px; */
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .bottom {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .logo {
+            width: 300px;
+        }
+
+        i {
+            padding-right: 20px;
+        }
+        .fullbottom{
+            display: flex;
+            justify-content: space-around;
+        }
+        .qq{
+            line-height: 3;
+        }
+        .w1{
+            display: flex;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(0, 0, 0);
+            /* font-weight: bold; */
+        }
+        @media only screen and (min-width:400px) and (max-width:600px){
+             
+            
+           .our{
+            display: block;
+            position: relative;
+            right: 180px;
+            
+           }
+           .cakeimg{
+           padding-right: 30px;
+           }
+           .text{
+            width: 300px;
+            position: relative;
+            left: 100px;
+           }
+          .bottom a{
+            position: relative;
+            top: 700px;
+          }
+          .qq{
+            position: relative;
+            top: 200px;
+            right: 100px;
+          }
+          .r1{
+            position: relative;
+            top: 250px;
+            
+            right: 100px;
+          }
+          .opp{
+            position: relative;
+            left: 250px;
+          }
+          .opp1{
+            position: relative;
+            /* left: 50px; */
+          }
+          .w1{
+            position: relative;
+            top: 200px;
+          }
+          .bottom h4{
+            position: relative;
+            top: 700px;
+            right: 100px;
+          }
+          .bottom i{
+            position: relative;
+            right: 100px;
+          }
+          #in{
+            position: relative;
+            right: 150px;
+            bottom: 32px;
+          }
+          .logo{
+            position: relative;
+            left: 100px;
+          }
+          .secret{
+            display: block;
+          }
+          .navbar-toggler{
+                position: relative;
+                left: 320px;
+                width: 60px;
+              }
+              #text1{
+                width: 400px;
+                height: 60px;
+              }
+              .navbar-toggler{
+                position: relative;
+                left: 320px;
+                width: 60px;
+              }
+              .navbar-brand{
+                position: relative;
+                right: 150px;
+              }
+        
+    }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./title.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <b> <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" target="_blank">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./our product.html" target="_blank">Our Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./history.html" target="_blank">Our History</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Become a Franchise
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./manuf.html" target="_blank ">Manufacturing Franchise</a></li>
+                            <li><a class="dropdown-item" href="./cakeshop.html" target="_blank">Cake Shop Franchise</a></li>
+                            <li>
+                                <!-- <hr class="dropdown-divider"> -->
+                            </li>
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+                </ul></b>
+                
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="about">
+        <h1>About Us</h1>
+    </div>
+    <div class="container">
+        <h2 class="h1">Our Story</h2>
+
+
+        <div class="our">
+            <div class="cakeimg">
+                <img src="./pic.png" alt="">
+            </div>
+
+
+            <div class="text">
+                <p>Our journey began with one humble shop in Fort, Mumbai and grew to over one thousand locations
+                    throughout
+                    India under the inspiring vision of our founder, Hussein Khorakiwala in the early 1956. Since then,
+                    our
+                    family has combined their years of experience with the vision of a community of collaborative shop
+                    owners, suppliers and other partners working together to create a brand name in the market to grow
+                    their
+                    business to what it is today.<br><br>
+
+                    In order to achieve this, the family offers franchises to budding entrepreneurs & distributors
+                    partnering with them to ensure success and excellence.</p>
+            </div>
+        </div>
+
+
+        <div>
+            <h2 class="h2">Our Mission, Values, and Vision</h2>
+            <p class="p1">Creating exceptional cakes is our way of life, and our customers and partners are the focus of
+                everything
+                that we do.
+                Our unwavering commitment to both<br> our customers, franchise partners & distributors is the key to our
+                success in
+                the
+                future. We are dedicated to creating a dynamic environment, conducting <br>ourselves with the highest
+                integrity for
+                every component in our value chain: our customers, suppliers, team members, and franchise partners. By
+                acting in<br>
+                the
+                best interest of everyone along our value chain, we are able to ensure our company’s sweet success.</p>
+        </div>
+
+        <div>
+            <h2 class="h3">Our Core values are</h2>
+            <p class="p1">1.All our products and services shall be offered with the same love, care, and affection as
+                if, they were meant for
+                the most beloved person.<br><br>
+                2.Being fair to all our customers, stakeholders and business partners, suppliers and employees. For we
+                believe
+                good intentions yield good products &<br> services is to make Monginis living proof that hard-work,
+                integrity,
+                innovation, and continued support can lead to all levels of success.</p>
+        </div>
+        <div>
+            <div class="img">
+                <img src="./pic1.png">
+
+                <div>
+                    <p><b>Our mission</b> is to offer gourmet cakes, pastries, cupcakes, cookies, and more that are
+                        universally enjoyed<br> by
+                        family and friends and make Monginis a part of all life’s celebrations and memories</p>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <img src="./pic2.png">
+            <div>
+                <p><b>Our Core</b> purpose is to help people express their happiness in a memorable way.</p>
+                </p>
+            </div>
+        </div>
+        <div class="img2">
+            <img src="./pic3.png">
+            <div>
+                <p><b>Our Passion </b> are not just our business, they are our passion. Our Gateaux, Pastires, cupcakes,
+                    swiss<br> rolls,
+                    and savories are all baked and prepared with the same love, care, and affection that would go into
+                    <br>preparing for
+                    our own friends and family. To us, the cakes and pastries that go out into the market are not<br>
+                    merely our product
+                    line, but are our way to bring something we love into our customers homes
+                </p>
+            </div>
+        </div>
+        <h2 class="h4">Our Secret</h2>
+        <div class="secret">
+            <img src="./pic4.png" width="450px">
+            <div>
+                <p>Monginis only uses the finest ingredients in its products, ensuring the goods <br>that we send out
+                    into the
+                    market are of the utmost quality. Monginis<br> believes in order to give the Real taste of any
+                    product, real
+                    ingredients<br> should be used & not cheaper substitutes. Our production includes a
+                    highly-<br>customized, automated
+                    system but does not forego the importance of the <br>human touch, while still adhering to strict
+                    quality control
+                    measures at every<br> stage of production, packaging, and delivery.<br><br>
+
+                    Combining technology and people is what ensures that our products are the <br>best. Without our
+                    dedicated,
+                    skilled, and loyal team members, Monginis<br> would not be where it is today.</p>
+            </div>
+        </div>
+        <div class="stores">
+            <h2 class="h4">Our Stores</h2>
+            <P>Our Cake Shops are conveniently located in local markets and communities to ensure the easy availability
+                of your
+                favorite Monginis cakes, cupcakes, <br>and more. Whether it is for a birthday, anniversary, wedding, or
+                just an evening
+                at home, Monginis has the perfect custom-made, personalized cake for you or <br>your choice from our
+                off-the-shelf
+                customer favorites! Great quality, service, and ethics has developed Monginis into a household name with
+                our 700+<br>
+                outlets. On an average 1,40,000 customers visit our cake shop daily across the country. Our Cake Shops
+                owners are
+                dedicated to the absolute satisfaction <br>of the customer. Additionally, our long shelf life packaged
+                cakes products
+                are available across 10,00,000 outlets nationally with a sizeable presence in Mall,<br> Super markets
+                and on Railway
+                stations</P>
+        </div>
+
+        <h2 class="h4">Our Moral Responsibility</h4>
+            <h4 class="h5">Food Safety ISO 2020</h4>
+
+            <h2 class="food">Food Processing Sanitation/Hygiene</h2><br>
+            <p>The philosophical viewpoint of the Food andDrug Administration is that they would prefer to see
+                industries bring
+                their plants into compliance voluntarily rather
+                than to <br>force compliance through FDA action.<br><br>
+
+                The government rarely takes legal action against a processor without first making an inspection. The
+                simplest
+                examples
+                are the finding of food products containing <br>whole insects, very large fragments, whole rodent
+                pellets or
+                hairs, or in
+                general, extraneous matter characterized by large size, indicating that the filth did not come from
+                <br>the raw
+                ingredients.
+            </p>
+            <h2 class="food">Our standards</h2><br>
+            <p>We are a HACCP & ISO : 22000 certified company. We believe in ensuring the highest degree of sanitation
+                and
+                hygiene.
+                We also follow Good Manufacturing practices<br> levied by the AIB (The American Institute of Baking).
+            </p>
+
+            <h2 class="food">Our values</h2>
+            <p>We at Monginis take a moral responsibility of upholding all the Laws levied by the FDA. We believe in
+                using the highest quality of raw materials and ingredients in our<br> manufactured goods. We take pride
+                in our
+                processes which ensure consistency and ensure safety from hazardous mishaps.<br><br>
+
+                We believe in being honest and fair to all our stake holders. We strictly do not give credit nor
+                encourage the idea of credit related transactions. Our company is a 100% <br>interest free company. One
+                of the very few companies in today’s times which could actually claim to be 100% interest free. We do
+                not take interest not lend on interest.</p>
+
+            <h2 class="food">Our Belief</h2>
+            <p>We believe in good intentions in all our practices. For we believe that good intentions will always yield
+                good
+                products and services. If the intent is unworthy there in an <br>inherent flaw from the start.</p>
+
+            <h2 class="food">Good Manufacturing Practices</h2>
+            <p>1.09, Federal guidelines under the Good Manufacturing Practices (GMPs) (CFR Title 21, Parts 100-199, Sub
+                Part 110)
+                add a further refinement to the FD&C Act. These <br>federal guidelines state the legal criteria under
+                which food can be
+                processed and are enforced as law.<br>
+                The “Good Manufacturing Practices” implement the Congressional Statute; the FD&C Act. This set of
+                guidelines
+                outlines the types of actions that a food processor must<br> take to manufacture food under clean
+                conditions<br><br>
+
+                We at Monginis uphold encourage and try our best to follow the Good Manufacturing practices.<br><br>
+
+                Section 110.10, Personnel, states the wearing of insecure jewelry, including rings with stones,
+                pendants, earrings,
+                bobby pins, etc., by persons engaged in food<br> processing is prohibited. This requirement helps
+                protect the food from
+                foreign material adulteration by these decorative materials. Provisions also include no eating, no<br>
+                tobacco use, or
+                no drinking in production areas, as well as a prohibition against the storage of personal articles in
+                the production
+                areas.<br>
+                Section 110.20, Plant and Grounds, states that a food processor must take proper precautions to reduce
+                the potential
+                for contamination of end products, raw materials<br>, or food packaging materials with microorganisms,
+                chemicals, filth,
+                or extraneous material. It requires that where the possibility of product adulteration exists,
+                procedures<br> must be
+                developed to eliminate this potential contamination.<br>
+                Section 110.35, General Maintenance, requires that all poisonous and dangerous cleaning compounds,
+                sanitizing
+                agents, and<br> pesticide chemicals shall be applied and stored so that food or food packaging material
+                contamination is
+                prevented.<br>
+                Section 110.37, Sanitary Facilities and Control, sets forth requirements on plumbing, sewage disposal,
+                and toilet
+                facilities that are necessary to prevent food <br>contamination.
+                Section 110.40, Equipment and Utensils, requires that food processing equipment shall be designed and
+                constructed to
+                preclude the adulteration of food<br> with lubricants, fuel, metal fragments, or any other
+                contaminants.<br>
+                Section 110.80, Production and Process Control, states that all reasonable precautions shall be taken to
+                ensure that
+                production procedures do not contaminate food<br> with filth, harmful chemicals, undesirable
+                microorganisms, or any
+                objectionable material.<br>
+                The key word throughout the GMP guidelines is prevention. The-entire food safety program must be based
+                upon the
+                prevention of the anticipated potential for<br> food contamination.
+                Chemical, microbiological, or extraneous material testing procedures shall be used to identify food
+                contamination
+                that may have occurred and to prevent contaminated foods from being offered for sale to the consumer.
+                As has been stated in the GMPs, food safety is a legal requirement, and <br>food processors can be
+                prosecuted for
+                failure to comply with the FD&C Act and the corresponding GMPs.</p>
+
+            <div class="bottom">
+                <img src="./title.png" class="logo">
+                <div>
+                    <h4 >Connect with us</h4>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook" style="font-size: 2rem;"></i></a>
+           <a href="https://www.twitter.com"> <i class="fa-brands fa-square-twitter" style="font-size: 2rem;"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-square-youtube" style="font-size: 2rem;"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram" style="font-size: 2rem;" id="in"></i></a>
+                </div>
+
+            </div>
+            <div class="fullbottom">
+                <div class="opp">
+                    <a href="./home.html">Contact Us</a><br>
+                    <a href="./about.html">About Us<br></a>
+                    <a href="">Become Franchise<br></a>
+                   <a href=""> Become Vendor<br></a>
+                </div>
+                <div class="opp1">
+                    <a href="./opps.html">Cakes<br></a>
+                    <a href="./opps.html">3D & SP Cakes<br></a>
+                    <a href="./opps.html">Pastries<br></a>
+                    <a href="./opps.html">Savouries<br></a>
+                    <a href="./opps.html">Chocolates<br></a>
+            
+                </div>
+                <div class="qq">
+                    <a href="./home.html">Download E-brochure<br></a>
+            
+                   <a href="./home.html"> Recognition & Awards<br></a>
+            
+                    <a href="./home.html">Cake Studies<br></a>
+            
+                    <a href="./home.html">Our Factories    <br></a>
+                </div>
+                <div class="r1">
+                   <a href="./home.html">Refund Policy</a> <br>
+                   <a href="./Privacy.html"> Privacy Policy</a><br>
+                   <a href="./terms.html">Terms & conditions</a> <br>
+                </div>
+                </div>
+            
+                
+                <P class="w1">Copyright © Monginis. All rights</P>
+                <p class="w1"> reserved</P>
+                
+                <p class="w1">Designed & Developed by <a href="https://www.QPSIT.com">QPSIT</a></p>
+                
+            </div>
+            </div>
+</body>
+
+</html>

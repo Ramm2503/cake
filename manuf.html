@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Franchiset</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        * {
+            margin: 0%;
+
+        }
+        .nav li:hover{
+            color: rgb(28, 120, 232);
+        }
+        .nav a:hover{
+            color:  rgb(22, 114, 226);
+        }
+        .nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            display: inline-block;
+            position: relative;
+            left: 350px;
+            padding: 30px;
+        }
+
+        label {
+            position: relative;
+            left: 150px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .about {
+            background-color: rgb(5, 5, 93);
+            color: rgb(255, 1, 149);
+            font-weight: bold;
+            font-size: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .full {
+            display: flex;
+            justify-content: center;
+            padding: 100px;
+            background-image: url(./pic16.jpg);
+        }
+
+        .tab {
+            width: 70vw;
+            height: 100vh;
+            background-color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 15px;
+            margin-top: 30px;
+
+
+
+
+        }
+
+        input {
+            width: 400px;
+            height: 30px;
+        }
+
+        select {
+            width: 400px;
+            height: 30px;
+        }
+
+        .address {
+            width: 400px;
+            height: 60px;
+        }
+        .btn{
+            background-color: rgb(241, 5, 151);
+            color: white;
+            border: 0cap;
+            border-radius: 5px;
+            width: 250px;
+            height: 60px;
+        }
+        .last{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 300px;
+            padding-right: 300px;
+            margin-top: 50px;
+        }
+        i{
+            padding-right: 20px;
+        }
+        #p{
+            display: flex;
+            justify-content: center;
+
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(0, 0, 0);
+            /* font-weight: bold; */
+        }
+        @media only screen and (min-width:400px) and (max-width:600px){
+            .tab{
+                display: block;
+            }
+            .tab1 p{
+                position: relative;
+                top: 700px;
+                right: 20px;
+            }
+            input{
+                width: 200px;
+            }
+            .tab2{
+                position: relative;
+                bottom: 100px;
+            }
+            .btn{
+                position: relative;
+                top: 400px;
+            }
+            select{
+                width: 200px;
+            }
+            .address{
+                width: 200px;
+            }
+            .last img{
+                position: relative;
+                top: 200px;
+                right: 250px;
+            }
+            #p{
+                position: relative;
+                left:30px;
+                top: 200px;
+                
+                
+            }
+            .last a{
+                display: block;
+                position: relative;
+                top: 250px;
+                right: 200px;
+
+            }
+            .last h4{
+                position: relative;
+                right: 200px;
+                top: 230px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <label><img src="./title.png"></label>
+        <nav>
+            <ul type="none">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./manuf.html"target="_blank">Become a Manufacturing Franchise</a></li>
+                <li><a href="./cakeshop.html" target="_blank">Become a Cake Shop Franchise</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="about">
+        <h1>Become A Manufacturing Franchise</h1>
+        <h4>Submit Your Enquire today!</h4>
+    </div>
+    
+
+
+        <div class="full">
+
+            <div class="tab">
+
+                <div class="tab1">
+                    First Name<br>
+                    <input type="text" placeholder="Enter your First Name"><br><br>
+                    Email<br>
+                    <input type="email" placeholder="Enter your email"><br><br>
+                    Property Type<br>
+                    <select>
+                        <option value="">choose option</option>
+                        <option value="">Rented</option>
+                        <option value="">Owned</option>
+                    </select><br><br>
+                    State<br>
+                    <select>
+                        <option value="">choose option</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Delhi</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Gujarat</option>
+                        <option value="">Telangana</option>
+                        <option value="">Tamil Nadu</option>
+                        <option value="">West Bengal</option>
+                        <option value="">Rajasthan</option>
+                        <option value="">Uttar pradesh</option>
+                        <option value="">Bihar</option>
+                        <option value="">Madhya Pradesh</option>
+                        <option value="">Andhra Pradesh</option>
+                        <option value="">Punjab</option>
+                        <option value="">Jammu and Kashmir</option>
+                        <option value="">Jharkhand</option>
+                        <option value="">Chhattisgarh</option>
+                        <option value="">Assam</option>
+                        <option value="">Chandigarh</option>
+                        <option value="">Odisha</option>
+                        <option value="">Kerala</option>
+                        <option value="">Uttarakhand</option>
+                        <option value="">Puducherry</option>
+                        <option value="">Tripura</option>
+                        <option value="">Karnatka</option>
+                        <option value="">Mizoram</option>
+                        <option value="">Meghalaya</option>
+                        <option value="">Manipur</option>
+                        <option value="">Himachal Pradesh</option>
+                        <option value="">Nagaland</option>
+                        <option value="">Goa</option>
+                        <option value="">Andaman and Nicobar Islands</option>
+                        <option value="">Arunachal Pradesh</option>
+                        <option value="">Dadra and Nagar Haveli</option>
+                    </select><br><br>
+                    Address<br>
+                    <input type="text" placeholder="Enter your Address" class="address"><br><br>
+                    <p>By clicking I Accept & Submit, you agree to our Terms and Privacy Policy</p>
+                    <button class="btn">I Accept and Submit</button>
+                </div>
+
+
+                <div class="tab2">
+                    Last Name<br>
+                    <input type="text" placeholder="Enter your Last Name"><br><br>
+
+                    Moblie Number<br>
+                    <input type="Number" placeholder="Enter your Mobile Number"><br><br>
+
+                    Pin Code<br>
+                    <input type="text" placeholder="Pin code"><br><br>
+
+                    City / Town<br>
+                    <select>
+                        <option value="">choose option</option>
+                    </select><br><br>
+
+
+                    What Is Your Current Business?<br>
+                    <input type="text" placeholder="Enter your Current business" class="address"><br><br>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        <div class="last">
+            <img src="./title.png" class="logo">
+                <div>
+                    <h4>Connect with us</h4>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook" style="font-size: 2rem;"></i></a>
+           <a href="https://www.twitter.com"target="_blank"> <i class="fa-brands fa-square-twitter" style="font-size: 2rem;"></i></a>
+            <a href="https://www.youtube.com"target="_blank"><i class="fa-brands fa-square-youtube" style="font-size: 2rem;"></i></a>
+            <a href="https://www.instagram.com"target="_blank"><i class="fa-brands fa-square-instagram" style="font-size: 2rem;"></i></a>
+                </div>
+        </div><br><br><br>
+        <p id="p">Copyright © Monginis. All rights reserved | Designed & Developed by <a href="https://www.QPSIT.com"target="_blank">QPSIT</a></p>
+
+    
+</body>
+
+</html>
